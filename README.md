@@ -37,7 +37,8 @@ If you're in a hurry, and run a *nix system, just do this:
 ```bash
 $ mkdir -p ~/.local/share/common-lisp/source
 
-$ git clone https://git.sr.ht/~pyramidion/trivial-us-ascii ~/.local/share/common-lisp/source/
+$ git clone https://git.sr.ht/~pyramidion/trivial-us-ascii \
+  ~/.local/share/common-lisp/source/trivial-us-ascii
 ```
 
 ASDF should find the package there and make it available to your Common Lisp

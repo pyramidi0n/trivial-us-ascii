@@ -12,13 +12,16 @@ Trivial US-ASCII provides the following functionality:
   - `ascii-code-char`
   - `ascii-char-code`
 
+
 * Functions that map Common Lisp strings to and from sequences of US-ASCII:
   - `ascii-code-string`
   - `ascii-string-code`
 
+
 * A macro that inlines the US-ASCII encoding of Common Lisp character literals
   at compile time:
   - `ascii`
+
 
 ## Installation
 

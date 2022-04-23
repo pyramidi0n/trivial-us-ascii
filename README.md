@@ -3,31 +3,37 @@
 A library for implementation-independent, portable US-ASCII encoding and
 decoding.
 
-Trivial US-ASCII provides the following functionality:
+## Features
 
-* A complete set of constants defining the US-ASCII characters as unsigned
-  bytes.
+US-ASCII character constants:
 
-* Functions that map Common Lisp characters to and from US-ASCII:
+```
++NUL+
++#\A+
++#\0+
+
+etc.
+```
+
+Functions mapping Lisp characters to and from US-ASCII:
+
 ```
 ascii-code-char
 ascii-char-code
 ```
 
+Functions mapping Lisp strings to and from sequences of US-ASCII:
 
-* Functions that map Common Lisp strings to and from sequences of US-ASCII:
 ```
 ascii-code-string
 ascii-string-code
 ```
 
+A macro to ease US-ASCII encoding of Lisp character literals:
 
-* A macro that inlines the US-ASCII encoding of Common Lisp character literals
-  at compile time:
 ```
 ascii
 ```
-
 
 ## Installation
 

@@ -37,27 +37,20 @@ ascii
 
 ## Installation
 
-Trivial US-ASCII requires [ASDF](https://common-lisp.net/project/asdf/), the
-Common Lisp world's de facto standard build facility. Most Common Lisp
-implementations ship with ASDF, so chances are you don't need to install it
-yourself.
+Trivial US-ASCII is available on [Ultralisp](https://ultralisp.org/) and is easy
+to install using [Quicklisp](https://www.quicklisp.org/beta/).
 
-You'll need to [configure ASDF to find Trivial US-ASCII](https://common-lisp.net/project/asdf/asdf/Configuring-ASDF-to-find-your-systems.html).
+Add the Ultralisp repository:
 
-If you're in a hurry, and run a *nix system, just do this:
-
-```bash
-$ mkdir -p ~/.local/share/common-lisp/source
-
-$ git clone https://git.sr.ht/~pyramidion/trivial-us-ascii \
-  ~/.local/share/common-lisp/source/trivial-us-ascii
+```lisp
+CL-USER> (ql-dist:install-dist "http://dist.ultralisp.org/")
 ```
 
-ASDF should find the package there and make it available to your Common Lisp
-implementation. Subsequently, you will be able to `require` the package in
-your REPL, and include it as a dependency to your own projects using ASDF.
+Install Trivial US-ASCII:
 
-At some point, I'll see about including it in [Quicklisp](https://www.quicklisp.org/beta/).
+```lisp
+CL-USER> (ql:quickload :trivial-us-ascii)
+```
 
 ## Usage
 

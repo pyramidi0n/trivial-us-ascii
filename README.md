@@ -9,18 +9,18 @@ Trivial US-ASCII provides the following functionality:
   bytes.
 
 * Functions that map Common Lisp characters to and from US-ASCII:
-  - `ascii-code-char`
-  - `ascii-char-code`
+`ascii-code-char`
+`ascii-char-code`
 
 
 * Functions that map Common Lisp strings to and from sequences of US-ASCII:
-  - `ascii-code-string`
-  - `ascii-string-code`
+`ascii-code-string`
+`ascii-string-code`
 
 
 * A macro that inlines the US-ASCII encoding of Common Lisp character literals
   at compile time:
-  - `ascii`
+`ascii`
 
 
 ## Installation
